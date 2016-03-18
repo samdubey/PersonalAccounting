@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05500D9F-BC24-4429-887B-76CBC7D085FF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Comp.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>PersonnelAcc</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>PersonnelAcc</RootNamespace>
+    <StartupObject>PersonnelAcc.FrmMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PersonnelAcc.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PersonnelAcc.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="CRVsPackageLib">
+      <Name>CRVsPackageLib</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CRVsPackageLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalEnterpriseLib">
+      <Name>CrystalEnterpriseLib</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalEnterpriseLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalKeyCodeLib">
+      <Name>CrystalKeyCodeLib</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalKeyCodeLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalPluginMgrLib">
+      <Name>CrystalPluginMgrLib</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalPluginMgrLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalReportPluginLib">
+      <Name>CrystalReportPluginLib</Name>
+      <HintPath>C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalReportPluginLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acext.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcExtract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClsMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupCreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MastTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrialBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSchema.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XSchema.xsd</DependentUpon>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="Comp.ico" />
+    <Content Include="DSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSet.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="XSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>XSchema.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Acext.resx">
+      <DependentUpon>Acext.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcExtract.resx">
+      <DependentUpon>AcExtract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BnR.resx">
+      <DependentUpon>BnR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashReceipt.resx">
+      <DependentUpon>CashReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAM.resx">
+      <DependentUpon>FrmAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComp.resx">
+      <DependentUpon>FrmComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupCreation.resx">
+      <DependentUpon>GroupCreation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal.af-ZA.resx">
+      <DependentUpon>Journal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal.af.resx">
+      <DependentUpon>Journal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal.resx">
+      <DependentUpon>Journal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JV.resx">
+      <DependentUpon>JV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MastTrans.resx">
+      <DependentUpon>MastTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGroup.resx">
+      <DependentUpon>NGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAdmin.resx">
+      <DependentUpon>ReportAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportOption.resx">
+      <DependentUpon>ReportOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCompany.resx">
+      <DependentUpon>ShowCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrialBalance.resx">
+      <DependentUpon>TrialBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCre.resx">
+      <DependentUpon>UserCre.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DSet.xsx">
+      <DependentUpon>DSet.xsd</DependentUpon>
+    </None>
+    <None Include="XSchema.xsx">
+      <DependentUpon>XSchema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

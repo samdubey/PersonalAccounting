@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="XSchema" targetNamespace="http://tempuri.org/XSchema.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/XSchema.xsd" xmlns:mstns="http://tempuri.org/XSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="ReportData">
+		<xs:complexType>
+			<xs:sequence />
+			<xs:attribute name="ReportNumber" type="xs:short" msdata:AutoIncrement="false" />
+			<xs:attribute name="ReportName" type="xs:string" />
+			<xs:attribute name="ReportPath" type="xs:string" />
+			<xs:attribute name="DataSource" type="xs:string" />
+			<xs:attribute name="ConnectionString" type="xs:string" />
+			<xs:attribute name="ReportParam" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CompanyInfo">
+		<xs:complexType>
+			<xs:sequence></xs:sequence>
+			<xs:attribute name="CompanyName" type="xs:string" use="required" />
+			<xs:attribute name="CompanyAddress" type="xs:string" />
+			<xs:attribute name="City" type="xs:string" />
+			<xs:attribute name="Pincode" type="xs:positiveInteger" />
+			<xs:attribute name="PhoneR" type="xs:positiveInteger" />
+			<xs:attribute name="PhoneO" type="xs:positiveInteger" />
+			<xs:attribute name="CompanyCode" type="xs:string" />
+			<xs:attribute name="Email" type="xs:string" />
+			<xs:attribute name="WebSite" type="xs:string" />
+			<xs:attribute name="PANNo" type="xs:string" />
+			<xs:attribute name="TINNo" type="xs:string" />
+			<xs:attribute name="TANNo" type="xs:string" />
+			<xs:attribute name="KeyPerson" type="xs:string" />
+			<xs:attribute name="FromDate" type="xs:date" />
+			<xs:attribute name="ToDate" type="xs:date" />
+			<xs:attribute name="ADBPath" type="xs:string" />
+			<xs:attribute name="RDBPath" type="xs:string" />
+			<xs:attribute name="DBName" type="xs:string" />
+			<xs:attribute name="ShortName" type="xs:string" />
+		</xs:complexType>
+		<xs:key name="CompanyInfoKey1">
+			<xs:selector xpath="." />
+			<xs:field xpath="@CompanyName" />
+		</xs:key>
+		<xs:key name="CompanyInfoKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath="." />
+			<xs:field xpath="@CompanyCode" />
+		</xs:key>
+	</xs:element>
+</xs:schema>
